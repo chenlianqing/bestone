@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+bestone.py	../bestone.py	1;"	kind:file	line:1
+data_all	../bestone.py	/^data_all = pd.merge(left=data_all, right=profit_avg3, how='left', on='code')$/;"	kind:variable	line:45
+data_all	../bestone.py	/^data_all = pd.merge(left=today_all_end,right=profit_end,how='left',on=['code','name'])$/;"	kind:variable	line:43
+data_select	../bestone.py	/^data_select = data_all.loc[(data_all['int_times'] <= 0.3) & (data_all['mktcap'] >= 100) & (data_all['net_profits'] >= 50) & (data_all['profits_gap_rate'] <= 1.0),:]$/;"	kind:variable	line:53
+datetime	../bestone.py	/^import datetime$/;"	kind:namespace	line:6
+early_year	../bestone.py	/^early_year = now_year - 3$/;"	kind:variable	line:26
+now_year	../bestone.py	/^now_year = datetime.datetime.now().year$/;"	kind:variable	line:25
+pd	../bestone.py	/^import pandas as pd$/;"	kind:namespace	line:7
+profit	../bestone.py	/^profit = ts.get_profit_data(year=2016, quarter=4)$/;"	kind:variable	line:20
+profit_avg	../bestone.py	/^    profit_avg = profit_avg.append(profit_data)$/;"	kind:variable	line:31
+profit_avg	../bestone.py	/^profit_avg = pd.DataFrame()$/;"	kind:variable	line:24
+profit_avg3	../bestone.py	/^profit_avg3 = profit_avg.groupby('code').agg({'net_profits':'mean'})$/;"	kind:variable	line:34
+profit_data	../bestone.py	/^    profit_data = ts.get_profit_data(year=i, quarter=4)$/;"	kind:variable	line:29
+profit_end	../bestone.py	/^profit_end = profit.loc[:,['code','name','net_profits','int_value','roe','net_profit_ratio']]$/;"	kind:variable	line:40
+today_all	../bestone.py	/^today_all = ts.get_today_all()$/;"	kind:variable	line:14
+today_all_end	../bestone.py	/^today_all_end = today_all.loc[:,['code','name','date','trade','mktcap','per','pb']]$/;"	kind:variable	line:17
+ts	../bestone.py	/^import tushare as ts$/;"	kind:namespace	line:5
+zero_risk	../bestone.py	/^zero_risk = 0.039$/;"	kind:variable	line:11
